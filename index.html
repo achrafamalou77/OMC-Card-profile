@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boxicons CSS -->
+     <title>Profile-Card</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="./pictures/omc-logo-8f578c7b.svg" type="image/x-icon"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Kumbh Sans';
+       } 
+       body{
+        
+         background-image: linear-gradient(to bottom, rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(./pictures/rar.png);
+        background-size: 105vh;
+        background-size: auto ,cover;
+        background-attachment: scroll,fixed;
+        text-decoration: none;
+       }
+       .container{
+        margin-top: 25vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .card-wrapper{
+        width: 290px;
+        height: 370px;
+        overflow: hidden;
+        position: static;
+        background-color: rgba(255,255,255,0.1);
+        border-radius: 32px;
+        border: none;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+        opacity: 1;
+       }
+       .card-card{
+        width: 290px;
+        height: 320px;
+        padding: 16px;
+        border-radius: 32px;
+        background-color: hsla(0, 0.00%, 88.27%, 1.00);
+       }
+       .card-texture{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 24px;
+        padding-left: 24px;
+        height: 34%;
+        background: url(./pictures/rar.png);
+        border: none;
+        border-radius: 24px;
+       }
+       .card-texture img {
+        cursor: pointer;
+       }
+     
+       .card-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center ;
+        height: 66%;
+        position: relative;
+       }
+
+       .image{
+        position: absolute;
+        left: auto;
+        top: 0%;
+        right: auto;
+        bottom: auto;
+        overflow: hidden;
+        width: 132px;
+        height: 132px;
+        margin-top: -66px;
+        
+        border: 16px solid hsla(30, 6.26%, 90.32%, 1.00);
+        border-radius: 50%;
+        vertical-align: baseline;
+      }
+      .card-desc{
+        margin-top: 31px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        padding-top: 54px;
+        text-align: center;
+      }
+      .name{
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .city{
+        padding-top: 8px;
+        padding-bottom: 37px;
+
+      }
+      .stat{
+        display: grid;
+        height: 60px;
+        margin: 0px 0px 1px 1px ;
+        padding: 0px;
+        grid-auto-flow: row;
+        grid-auto-columns: 1fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        border-top: 1px solid hsl(227, 10%, 46%);
+      }
+      .fly{
+        display: flex;
+        height: 50px;
+        max-height: 50px;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        object-fit: fill;
+      }
+      .card-glass{
+        display: flex;
+        height: 75px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        
+      }
+      .card-glass .text-pro{
+        padding-bottom: 24px;
+        color: hsl(23, 10%, 100%);
+        font-weight: 500;
+      }
+      a{
+        text-decoration: none;
+      }
+      .info{
+        font-weight: 600;
+        font-size: x-large;
+      }
+      .text-stat{
+        font-weight: 200;
+        font-size: small;
+      }
+      .num{
+        font-weight: 500;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card-wrapper">
+            <div class="card-card">
+                <div class="card-texture">
+                    <img src="./pictures/6776a12f903cedb8e8fbd444_comment.svg" alt="">
+                    <img src="./pictures/6776a12f903cedb8e8fbd445_more.svg" alt="">
+                </div>
+                <div class="card-content">
+                   <img src="./pictures/profile.png" alt="profile pic" class="image"> 
+                   <div class="card-desc">
+                    <div class="name">Achraf Amalou 19</div>
+                    <div class="city">Alger</div>
+                    <div class="line"></div>
+                   </div>
+                   <div class="stat">
+                    
+                        <div class="fly">
+                            <div class="num">55 </div>
+                            <div class="text-stat">Followers</div>
+                        </div> 
+                        <div class="fly">
+                            <div class="num">102</div>
+                            <div class="text-stat">Likes</div>
+                        </div>
+                        <div class="fly">
+                            <div class="num">4</div>
+                            <div class="text-stat">Photos</div>
+                        </div>
+                       
+                   </div>
+                </div>
+            </div>
+            <div class="card-glass">
+                <div class="more" >
+                  <a href="https://www.openmindsclub.net/" target="_blank" >
+                    <div class="text-pro">Profile</div>
+                  </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</body>
+</html>
